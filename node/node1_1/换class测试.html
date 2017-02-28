@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+div { width:200px; height:auto; background:#FF0000; }
+.box { width:200px; height:auto; background:#00CC33; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>换Class测试</title>
+<script type="text/javascript">
+function toRed(){
+	document.getElementById('div1').className='box';
+}
+function toGreen(){
+	document.getElementById('div1').className=' '
+}
+</script>
+</head>
+
+
+<body>
+<label onmouseover="toRed();"
+ onmouseout=" toGreen()"><input type="checkbox"  /> 自动登录</label>
+<label onmouseover="toRed();"
+ onmouseout=" toGreen()"><div id="div1" >只测试背景色,直接将动作添加至div标签中是不起作用的，在网页中div并不显示，只是div标签括起来的内容显示，所以需要一个label标签将其全部括起来</div></label>
+</body>
+</html>
