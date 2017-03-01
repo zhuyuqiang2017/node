@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>事件提取</title>
+<style>
+div { width:200px; height:200px; background:#00FF00; }
+</style>
+<script type="text/javascript">
+window.onload = function(){
+var mDiv1 = document.getElementById('div1');
+mDiv1.onmouseover=toRed;
+mDiv1.onmouseout=toGreen;
+}
+function toRed(){
+var mDiv1 = document.getElementById('div1');
+mDiv1.style.background='#0000cc';
+}
+function toGreen(){
+	var mDiv1 = document.getElementById('div1');
+	mDiv1.style.background='#00ff00';
+}
+</script>
+</head>
+
+<body>
+<label  ><div id="div1">仅仅改变背景颜色</div></label>
+</body>
+</html>
